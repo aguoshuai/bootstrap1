@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+	<link rel="stylesheet" href="css/animate.css">
+	  <script>
+      $(function(){
+        //
+          $('.nav').singlePageNav({
+            offset:70   //不顶到最上面
+         });
+
+          //wow
+          new WOW().init();  //wow依赖animate，必须要跟animate一起来写
+
+      })
+    </script>
+	<title>Document</title>
+</head>
+<body>
+ 
+<div id="big_top" >
+	 <div class="beijing">
+<nav class="navbar " role="navigation">   <!--  role="navigation"方便盲人看 -->
+		<div class="top_main">   <!--  bootstrap里面让文本居中的写法 -->
+		 <!-- bootstrap里面导航头部的写法  -->  
+			<div class="navbar-header">      
+				<a href="index.html" class="navbar-brand">
+				<img src="img/2.png" alt="" style="display:inline-block; width: 80%; height: 60px; margin-top: -35px; margin-left: 15%;">
+				</a>
+				<!-- 页面缩小显示的按钮 navbar-toggle按钮放大隐藏缩小显示\导航条下的切换  collapse折叠效果-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar">
+					<!-- <span class="sr-only">切换菜单</span> -->
+					<span style="display:block; width: 22px; height: 2px; background: #fff; margin-bottom: 6px;"></span>
+					<span style="display:block; width: 22px; height: 2px; background: #fff; margin-bottom: 6px;"></span>
+					<span style="display:block; width: 22px; height: 2px; background: #fff; margin-bottom: 6px;"></span>
+				</button>
+			</div>
+			<!-- 导航主菜单 导航折叠-->
+			<div class="collapse navbar-collapse" id="top-navbar">
+				<ul class="nav navbar-nav shouye">
+					<li class="active">
+						<a href="#">首页</a>     
+					</li>
+					<li>
+						<a href="#" >  
+							热门景点
+						
+						</a>
+					
+					</li>
+					<li><a href="#">旅游套餐</a></li>
+          	<li><a href="#">客户反馈</a></li>
+            	<li><a href="#">关于我们</a></li>
+              	<li><a href="#">联系我们</a></li>
+                	<li><a href="#">旅游签证</a></li>
+				
+				</ul>
+				<!-- 左边文本框 -->
+			<div class="baisebeijing hidden-xs">
+				<ul class="nav navbar-nav navbar-right zhuce">   <!--  nav设置ul是一个导航 navbar-nav导航栏下的导航 --> 
+					<li><a href=""><s class="glyphicon glyphicon-user"></s> 登录</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="glyphicon glyphicon-log-in"></b> 注册
+							<span class="caret" style="color: #fff;"></span>
+						</a>
+					
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	
+	<div class="chatu">
+		<img src="img/3.png">
+		<h1>AFFORDABLE PARIS TOURS</h1>
+		<h4>CITY TOURS / TOUR TICKETS / TOUR GUIDES</h4>
+		<p class="container hidden-xs">VIEW TOURS</p>
+		<h3 class="glyphicon glyphicon-play-circle"></h3>
+	</div>
+	
+  </div>
+</div>
+
+<form class="form-inline" action="">    <!--form-inline表单横向排列-->
+<div class="lvyoujingdian">
+	<span>搜索热门旅游景点</span>
+</div>
+					<div class="input-group shoujihao">
+
+						<input type="text" class="form-control" id="mobile" placeholder="请输入需要搜索的文字"/>
+												<span class="input-group-addon glyphicon glyphicon-search"></span>
+					</div>
+				
+	</form>
+
+		<div class="balireimen">
+			<p>巴黎旅游景点</p>
+			<h4>Quisque at tortor a libero posuer</h4>
+			<ul class="container">
+				<li class="col-md-2 col-xs-12 col-sm-2 col-lg-2">所有景点</li>
+				<li class="col-md-2 col-xs-12 col-sm-2 col-lg-2">第二区</li>
+				<li class="col-md-2 col-xs-12  col-sm-2 col-lg-2">第三区</li>
+				<li class="col-md-2 col-xs-12 col-sm-2 col-lg-2">第六区</li>
+				<li class="col-md-2 col-xs-12 col-sm-2 col-lg-2">第八区</li>
+				<li class="col-md-2 col-xs-12 col-sm-2 col-lg-2">第九区</li>
+			</ul>
+	</div>
+
+<div class="zhende ">
+	<div class="tp_box container">
+		<ul >
+			<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow slideInUp" data-wow-delay="0.4s";>
+				<img src="img/4.jpg">
+				<p>卢浮宫</p>
+				<b>客户评分:<span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span></b>
+			</li>
+		<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow slideInUp" data-wow-delay="0.4s";>
+				<img src="img/5.jpg">
+				<p>凡赛尔宫</p>
+				<b>客户评分:<span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span></b>
+			</li>
+		<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow slideInUp" data-wow-delay="0.4s";>
+				<img src="img/6.jpg">
+				<p>奥赛博物馆</p>
+				<b>客户评分:<span class="glyphicon glyphicon-star " ></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span></b>
+			</li>
+		<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow rotateInUpLeft" data-wow-delay="0.6s">
+				<img src="img/7.jpg">
+				<p>巴黎铁塔</p>
+				<b>客户评分:<span class="glyphicon glyphicon-star " ></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span></b>
+			</li>
+		<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow rotateInUpLeft" data-wow-delay="0.6s">
+				<img src="img/8.jpg">
+				<p>凯旋门</p>
+				<b>客户评分:<span class="glyphicon glyphicon-star " ></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span></b>
+			</li>
+			<li></li><li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow rotateInUpLeft" data-wow-delay="0.6s">
+				<img src="img/9.jpg">
+				<p>巴黎圣母院</p>
+				<b>客户评分:<span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span></b>
+			</li>
+		<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow flipInY" data-wow-delay="0.6s">
+				<img src="img/10.jpg">
+				<p>巴士</p>
+				<b>客户评分:<span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span></b>
+			</li>
+		<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4  wow flipInY" data-wow-delay="0.6s">
+				<img src="img/11.jpg">
+				<p>连丕渡中心</p>
+				<b>客户评分:<span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span></b>
+			</li>
+			<li></li><li class="col-md-4 col-xs-12 col-sm-4 col-lg-4  wow flipInY" data-wow-delay="0.6s">
+				<img src="img/12.jpg">
+				<p>塞纳河</p>
+				<b>客户评分:<span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span><span class="glyphicon glyphicon-star "></span></b>
+			</li>
+		</ul>
+	</div>
+	<div>
+	</div>
+	<div class="MODE container">
+		<p>MORE<s class="glyphicon glyphicon-arrow-right"></s></p>
+	</div>
+
+	<div class="diaochulai">
+		<p>为你开启一段愉快的旅程
+			<h4>CITY TOURS / TOUR TICKETS / TOUR GUIDES</h4>
+		</p>
+	</div>
+
+	<div class="fuwuliucheng container">
+		<p>服务流程</p>
+		<h4>CITY TOURS / TOUR TICKETS / TOUR GUIDES</h4>
+
+		<ul>
+			<li class="col-md-3 col-xs-12 col-sm-3 col-lg-3"><p>第一步</p><img src="img/15.jpg"><h4>填写表单</h4><h6>您只需通过网站、微信、电话、客服等任意途径联系我们，就会有您</h6></li>
+			<li class="col-md-3 col-xs-12 col-sm-3 col-lg-3"><p>第一步</p><img src="img/15.jpg"><h4>填写表单</h4><h6>您只需通过网站、微信、电话、客服等任意途径联系我们，就会有您</h6></li>
+			<li class="col-md-3 col-xs-12 col-sm-3 col-lg-3"><p>第一步</p><img src="img/15.jpg"><h4>填写表单</h4><h6>您只需通过网站、微信、电话、客服等任意途径联系我们，就会有您</h6></li>
+			<li class="col-md-3 col-xs-12 col-sm-3 col-lg-3"><p>第一步</p><img src="img/15.jpg"><h4>填写表单</h4><h6>您只需通过网站、微信、电话、客服等任意途径联系我们，就会有您</h6></li>
+		</ul>
+	</div>
+	<div class="bashi">
+		<div class="beijing"></div>
+	</div>
+<section>
+
+</section>
+	<div class="gaoduanlvyou  container">
+		<h3>巴黎热门旅游景点</h3>
+		<h5>Qsque at tortr a rcu. Curab equat</h5>
+		<ul class="container">
+			<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow fadeInLeft">
+				<b class="glyphicon glyphicon-download"></b>
+				<p>120+<b>高端旅游</b></p>
+				<h2>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</h2>
+				<span>了解跟多</span>
+			</li>
+			<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow fadeInDown">
+				<b class="glyphicon glyphicon-download"></b>
+				<p>120+<b>高端旅游</b></p>
+				<h2>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</h2>
+				<span>了解跟多</span>
+			</li>
+			<li class="col-md-4 col-xs-12 col-sm-4 col-lg-4 wow lightSpeedIn">
+				<b class="glyphicon glyphicon-download"></b>
+				<p>120+<b>高端旅游</b></p>
+				<h2>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</h2>
+				<span>了解跟多</span>
+			</li>
+		</ul>
+	</div>
+
+	<div class="list_box">
+		<ul>
+			<li class="col-md-6 col-xs-12 col-sm-6 col-lg-6"><img src="img/16.png"></li>
+			<li class="col-md-6 col-xs-12 col-sm-6 col-lg-6">
+				<h3>欢迎登陆<b>PAIRS</b>旅行社官方网站了解更多旅游资讯</h3>
+				<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户， 还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。</p>
+				<span>VIEW TOURS</span>
+			</li>
+		</ul>
+	</div>
+
+	<div class="last_box container">
+		<ul class="container">
+			<li class="col-md-2 col-xs-12 col-sm-2 col-lg-2"><h4>联系我们</h4><h5>/ contact</h5></li>
+			<li class="col-md-5 col-xs-12 col-sm-5 col-lg-5">
+				<h4>巴黎旅游订制服务</h4>
+				<dl class="col-md-6 col-xs-12 col-sm-6 col-lg-6">
+					<dt>地址：江苏省苏州市园区金</dt>
+					<dt>鸡湖大道路000号</dt>
+					<dt>邮编：100000</dt>
+					<dt>电话：400-888-8888</dt>
+				</dl>
+				<dl class="col-md-6 col-xs-12 col-sm-6 col-lg-6">
+					<dt>电话：400-888-8888</dt>
+					<dt>手机：188-6666-5188</dt>
+					<dt>传真：000-66668888</dt>
+					<dt>邮箱：website@qq.com</dt>
+				</dl>
+			</li>
+			<li class="col-md-3 col-xs-12 col-sm-3 col-lg-3">
+				<h4>关于我们</h4>
+				<img src="img/17.jpg">
+			</li>
+			<li class="col-md-2 col-xs-12 col-sm-2 col-lg-2">
+				<s></s>
+				<b></b>
+				<span></span>
+				<i></i>
+			</li>
+			<li></li>
+		</ul>
+	</div>
+	
+
+  
+</div>
+</body>
+
+</html>
